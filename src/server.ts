@@ -9,7 +9,7 @@ import { productRouter } from '../routes/product'
 dotenv.config()
 
 
-const URI = process.env.MONGOOSE_URI || 'URI=mongodb+srv://maornetzer9:Maor013254777@maor.quyl8kx.mongodb.net/E-Commerce';
+const URI = process.env.MONGOOSE_URI || 'mongodb+srv://maornetzer9:Maor013254777@maor.quyl8kx.mongodb.net/E-Commerce';
 const BACKEND_PORT = process.env.BACKEND_PORT || 4200;
 const FRONTEND_PORT = process.env.FRONTEND_PORT || 3000;
 const app = express()
