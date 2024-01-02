@@ -5,7 +5,7 @@ import { Responses } from '../responses';
 const router = Router();
 
 
-router.use('/E-Commerce', async (req: Request, res: Response): Promise<any> => {
+router.get('/E-Commerce', async (req: Request, res: Response): Promise<any> => {
     try 
     {
         const response = await new FakeUrlService().fakeProducts();
