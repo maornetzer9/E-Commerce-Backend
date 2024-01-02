@@ -3,6 +3,7 @@
       "target": "es5",
       "module": "commonjs",
       "outDir": "./dist",
+      "rootDir": "./src",
       "strict": true,
       "esModuleInterop": true,
       "baseUrl": "./src",
@@ -13,8 +14,9 @@
     },
     "include": [
       "src/**/*.ts",
-      "test/**/*.ts"
-, "services/user.ts"    ],
+      "test/**/*.ts", 
+      "services/user.ts"    
+    ],
     "exclude": [
       "node_modules",
       "dist"
