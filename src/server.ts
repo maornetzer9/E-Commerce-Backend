@@ -14,13 +14,13 @@ const BACKEND_PORT = process.env.PORT || 4200;
 const FRONTEND_PORT = process.env.FRONTEND_PORT || 3000;
 const app = express()
 
-// const corsOptions = 
-// {
-//     origin  : process.env.FRONTEND_ORIGIN,
-//     method  : 'GET, HEAD, PUT, PATCH, POST, DELETE',
-// }
+const corsOptions = 
+{
+    origin  : process.env.FRONTEND_PRODUCTION,
+    method  : 'GET, HEAD, PUT, PATCH, POST, DELETE',
+}
 
-//   app.use(cors(corsOptions))
+  app.use(cors(corsOptions))
 app.use( cors( ) );
 app.use(bodyParser.json());
 app.use('/user', userRouter);
