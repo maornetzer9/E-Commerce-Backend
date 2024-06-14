@@ -5,7 +5,7 @@ class MockRequestService
 {
     constructor(){}
 
-    async fakeProducts(): Promise<any>
+    async MockProducts(): Promise<any>
     {
         try 
         {
