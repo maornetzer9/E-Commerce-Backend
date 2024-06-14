@@ -16,11 +16,11 @@ const app = express()
 
 const corsOptions = 
 {
-    origin  : process.env.FRONTEND_PRODUCTION,
+    origin  : process.env.FRONTEND_PRODUCTION || `http://localhost:${FRONTEND_PORT}`,
     method  : 'GET, HEAD, PUT, PATCH, POST, DELETE',
 }
 
-  app.use(cors(corsOptions))
+app.use(cors(corsOptions))
 app.use( cors( ) );
 app.use(bodyParser.json());
 app.use('/user', userRouter);

@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import Product from '../database/product';
 
-class FakeUrlService 
+class MockRequestService 
 {
     constructor(){}
 
@@ -35,4 +35,4 @@ class FakeUrlService
     } 
 }
 
-export default FakeUrlService;
+export default MockRequestService;
